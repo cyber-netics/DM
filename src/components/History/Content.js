@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Image, Dimensions } from "react-native";
 import Swipeable from "../Swipable";
-import { Title } from "./components";
+import { Title, ContentInfo, Progress } from "./components";
 
 const dimentions = Dimensions.get("window");
 
@@ -19,8 +19,8 @@ const Content = ({ lastElem, handleRemove, content }) => {
 
       <View style={styles.infoContainer}>
         <Title title={content.title} />
-        {/* <ContentInfo content={props.content} />
-        <Progress progress={props.content.progress} /> */}
+        <ContentInfo content={content} />
+        <Progress progress={content.progress} />
       </View>
     </Swipeable>
   );
