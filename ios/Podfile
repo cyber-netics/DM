@@ -10,6 +10,10 @@ target 'awesomeApp' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-MediaLibrary', :path => "#{permissions_path}/MediaLibrary"
+  pod 'Permission-PhotoLibraryAddOnly', :path => "#{permissions_path}/PhotoLibraryAddOnly"
+
   target 'awesomeAppTests' do
     inherit! :complete
     # Pods for testing

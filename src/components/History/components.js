@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: "sans-serif-bold",
     color: "#000",
+    paddingTop: 2,
   },
   title: {
     fontSize: 14,
