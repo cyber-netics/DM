@@ -24,10 +24,8 @@ const App = () => {
     },
   ]);
 
-  const handleDownload = () => {
-    downloader((res) => {
-      console.log("response", res);
-    });
+  const handleDownload = async () => {
+    downloader();
   };
 
   const removeHistoryItem = () => {};
